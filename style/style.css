@@ -70,7 +70,6 @@ menu{
 
 div#container{
     display: flex; /* Define um contêiner flexível */
-    justify-content: space-between; /* Espaço entre as caixas */
     flex-wrap: wrap; /* Permite que as caixas se movam para a próxima linha */
     margin: 0px;
     
@@ -78,12 +77,12 @@ div#container{
 @media (max-width: 600px) {
     .caixa {
         width: 100%; /* Largura total em telas menores */
-        margin: 10px 0; /* Margem vertical em telas menores */
+        margin: 0px 0; /* Margem vertical em telas menores */
     }
 }
 .caixa{
     padding: 20px; /* Espaçamento interno */
-    width: calc(50% - 20px); /* Largura das caixas com margem */
+    width: calc(50% - 0px); /* Largura das caixas com margem */
     box-sizing: border-box; /* Inclui padding e borda na largura total */
     text-align: center;
 }
