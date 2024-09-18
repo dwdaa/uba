@@ -1,35 +1,74 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*CONFIGURAÇÕES GERAIS*/
 *{
     padding: 0%;
     margin: 0%;
 }
+a{
+    text-decoration: none;
+}
+
+/*CSS REFERENTE AO MENU - INICIO*/
+   /*LOGO - INICIO*/
+  div#uba{
+    background-color: #5fb6d9;
+    max-width: 120px;
+    border:1px solid black ;
+    padding: 30px 5px 30px 5px;
+    margin: 10px;
+    text-align: center;
+    text-align: center;
+    font-family: "Gowun Batang", serif;
+  }
+  div#uba>h2 {
+    text-align: right;
+    display: inline;
+  }
+  span#barco{
+    color: black;
+  }
+   /*LOGO - FIM*/
 
 header{ 
     background-color: #5fb6d9;
-    padding: 60px;
+    padding: 50px;
     padding-bottom: 20px;}
-      
-div#uba{
-    background-color: #5fb6d9;
-    max-width: 100px;
-    border:1px solid black ;
-    padding: 25px 5px 25px 5px;
- }
- div#uba>h2 {
-    background-color: aliceblue;
-    text-align: center;
-    padding: 10px 0px 10px 30px;
-    margin-right: 30px;
-   
-}
+          
+menu{
+    display: none;       
+   }
+   menu>ul{
+       list-style-type: none;
+   }
+   menu>ul>li>a{
+       display: block;
+       padding: 10px;
+       margin: 5px;
+       text-decoration: none;
+       border-top: 1px solid black;
+       text-align: center;
+   }
+   menu>ul>li>a:hover{
+       background-color: #2685bf}
 
-nav{
-    margin-left: 700px;
-    
-}
-nav>a{
-    margin: 5px;
+   span#burguer{
+        background-color: #5fb6d9;
+        display: block;
+        text-align: left;
+        padding: 10px;
+        cursor: pointer;
+    }
+    span#burguer:hover{
+        background-color: #2685bf;
+    }
+/*CSS REFERENTE AO MENU - FIM*/       
+
+
+/*CSS REFERENTE AO MAIN - INICIO*/  
+main{
+    padding: 80px 0px 80px 0px;
 }
 
 div#text{
@@ -56,12 +95,19 @@ div#click{
     margin-left: 50vh;
        
 }
-    
-}
-a{
-    text-decoration: none;
-}
+/*CSS REFERENTE AO MAIN - FIM*/
 
+
+/*CSS REFERENTE AO FOOTER - INICIO*/  
 footer{
     background-color: #2685bf;
+    padding: 50px;
 }
+div#ubax{
+    background-color: #5fb6d9;
+    max-width: 100px;
+    border:1px solid black ;
+    padding: 25px 5px 25px 5px;
+    
+}
+/*CSS REFERENTE AO FOOTER - FIM*/  
