@@ -5,11 +5,16 @@
 *{
     padding: 0%;
     margin: 0%;
+
+}
+body{
+    background-color: whitesmoke;
 }
 a{
     text-decoration: none;
 }
 
+/*PÁGINA INICIAL*/
 /*CSS REFERENTE AO MENU - INICIO*/
    /*LOGO - INICIO*/
   div#uba{
@@ -105,3 +110,39 @@ div#ubax{
 }
 
 /*CSS REFERENTE AO FOOTER - FIM*/  
+
+
+/*PÁGINA MINHA CONTA*/
+
+div#minhaconta {
+    display: flex; /* Define um contêiner flexível */
+    justify-content: space-between; /* Espaço entre as caixas */
+    flex-wrap: wrap; /* Permite que as caixas se movam para a próxima linha */
+    margin: 20px;
+}
+
+div#login {
+    background-color: #5fb6d963; /* Cor de fundo das caixas */
+    border-radius: 10px; /* Borda das caixas */
+    padding: 40px; /* Espaçamento interno */
+    width: calc(50% - 20px); /* Largura das caixas com margem */
+    margin: 10px; /* Margem para espaçamento */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+@media (max-width: 600px) {
+    div#login {
+        width: 100%; /* Largura total em telas menores */
+        margin: 10px 0; /* Margem vertical em telas menores */
+    }
+}
+input#ok{
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+}
+input{
+    padding: 5px;
+    width: 35vw ;
+}
