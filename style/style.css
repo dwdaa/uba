@@ -146,3 +146,8 @@ input{
     padding: 5px;
     width: 35vw ;
 }
+h2{
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
+}
