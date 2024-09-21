@@ -27,9 +27,60 @@
                 <li><a href="">SOBRE NÓS</a></li>
             </ul>
         </menu>
-    
     </header>
+    <main>
+
+        <div style="background-color: #5fb6d977;" class="container">
+            <div class="caixa">
+            <div id="texto" >
+                <span class="material-symbols-outlined">
+                    location_on
+                    </span>
+                <input id="procure" type="text" name="local" placeholder="Insira o local">
+                <br>
+                <br>
+                <span  style="padding-right: 100px;" class="material-symbols-outlined">
+                    more_vert</span> 
+                <br>
+                <br>
+                <span class="material-symbols-outlined">
+                    location_on
+                    </span>
+                <input id="procure" type="text" name="local" placeholder="Informe o destino" >
+                <br>
+                <br>
+                <br>
+                <input id="ok" type="submit" value="Cadastre-se">
+            </div>
+            </div>
+            <div class="caixa">
+                <img src="img/manaus.jpg" alt="">
+            </div>
+        </div>
+    
+
+
+    </main>
+
+    <footer>
+        <div id="uba">
+            <span id="barco" class="material-symbols-outlined">
+                directions_boat
+                </span> <h2>Ubá</h2>
+        </div>
+           <hr>
+           <br>
+           <p>©2024 Ubá Fluvial. Todos os direitos reservados.</p>
+    <footer>  
+
     <script>
+        function mudouoTamanho(){
+            if (window.innerWidth == 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
           if (menu.style.display == 'block') {
               menu.style.display = 'none'

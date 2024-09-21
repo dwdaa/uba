@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/boat.png" type="image/x-icon">
 </head>
-<body>
+<body onresize="mudouoTamanho()">
     <header>
         <div id="uba">
             <span id="barco" class="material-symbols-outlined">
@@ -30,25 +30,21 @@
     
     </header>
     <main>
-        <div id="container">
-            <div class="caixa">
 
-               <h2>Conheça a Amazônia</h2>
-               <br>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis autem error harum, dolores sit inventore veniam doloremque mollitia ipsum dolorem earum fugiat odit obcaecati dignissimos eaque perspiciatis, dolore aut explicabo.</p>
-               <br>
-               <p><a href="">COMECE AQUI</a></p>
-             
-             </div>
-    
+        <div class="container">
             <div class="caixa">
-                <picture>
-                    <img src="img/Braco no Rio Negro - Manaus - Amazonas.jpg" alt="">
-                </picture>
-                
-                
-            </div> 
-        </div> 
+            <div id="texto">
+              <h2>Conheça a Amazônia</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam maxime rem, ad natus in consequuntur at cum quaerat dolor illo mollitia eveniet harum aliquid magnam suscipit! Nihil, enim ipsam?</p>
+              <br>
+              <br>
+              <div id="click"><a href="solicite.html">COMECE AQUI</a></div>
+            </div>
+            </div>
+            <div class="caixa">
+                <img src="img/Braco no Rio Negro - Manaus - Amazonas.jpg" alt="">
+            </div>
+        </div>
     
 
 
@@ -64,6 +60,13 @@
            <p>©2024 Ubá Fluvial. Todos os direitos reservados.</p>
     <footer>
     <script>
+        function mudouoTamanho(){
+            if (window.innerWidth == 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
           if (menu.style.display == 'block') {
               menu.style.display = 'none'

@@ -3,8 +3,8 @@
 
 /*CONFIGURAÇÕES GERAIS*/
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 
 }
 body{
@@ -12,6 +12,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 
 /*PÁGINA INICIAL*/
@@ -39,20 +40,21 @@ a{
 header{ 
     background-color: #5fb6d9;
     padding: 50px;
-    padding-bottom: 20px;}
+    padding-bottom: 5px;}
           
 menu{
     display: none;       
    }
    menu>ul{
        list-style-type: none;
+       text-align: right;
    }
    menu>ul>li>a{
        display: block;
-       padding: 10px;
-       margin: 5px;
+       padding: 5px 15px;
+       margin: 10px;
        text-decoration: none;
-       border-top: 1px solid black;
+       border: 1px solid black;
        text-align: center;
    }
    menu>ul>li>a:hover{
@@ -68,28 +70,61 @@ menu{
     span#burguer:hover{
         background-color: #2685bf;
     }
+   @media screen and (min-width:768px) {
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu>ul>li{
+        display: inline-block;
+    }
+   } 
 /*CSS REFERENTE AO MENU - FIM*/       
 
 
 /*CSS REFERENTE AO MAIN - INICIO*/  
 
-div#container{
-    display: flex; /* Define um contêiner flexível */
-    flex-wrap: wrap; /* Permite que as caixas se movam para a próxima linha */
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
     margin: 0px;
-    
+    padding: 0%;
 }
+
+.caixa {
+    padding: 0px; 
+    width: calc(50% - 0px); 
+    margin: 0px; 
+    
+
+}
+
 @media (max-width: 600px) {
     .caixa {
         width: 100%; /* Largura total em telas menores */
         margin: 0px 0; /* Margem vertical em telas menores */
     }
 }
-.caixa{
-    padding: 20px; /* Espaçamento interno */
-    width: calc(50% - 0px); /* Largura das caixas com margem */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+img{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.caixa> #texto{
     text-align: center;
+    padding: 140px 40px;
+}
+.caixa> #texto>h2{
+    text-align: center;
+}
+div#click{
+    border: 1px solid black;
+    max-width: 150px;
+    margin: auto;
+    padding: 10px;
 }
     
 
@@ -108,6 +143,10 @@ div#ubax{
     padding: 25px 5px 25px 5px;
     
 }
+ul{
+    list-style-type: none;
+    
+}
 
 /*CSS REFERENTE AO FOOTER - FIM*/  
 
@@ -118,7 +157,7 @@ div#minhaconta {
     display: flex; /* Define um contêiner flexível */
     justify-content: space-between; /* Espaço entre as caixas */
     flex-wrap: wrap; /* Permite que as caixas se movam para a próxima linha */
-    margin: 20px;
+    margin: 0px;
 }
 
 div#login {
@@ -151,3 +190,13 @@ h2{
     text-align: justify;
     margin: 20px;
 }
+/*PÁGINA MINHA CONTA -FIM*/
+
+
+/*PÁGINA SOLICITE*/
+
+input#procure{
+    padding: 8px;
+    width: 20vw ;
+    text-align: center;}
+
