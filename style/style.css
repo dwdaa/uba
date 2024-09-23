@@ -201,17 +201,17 @@ input#procure{
     }
 div#solicite{
     background-color: #2684bf62;
-    padding: 60px 8px;
+    padding: 80px 8px;
     text-align: center;
-    margin: 100px 90px;
+    margin: 60px 80px;
     border-radius: 10px;
 }    
 span#pontos{
-    padding-right: 265px;
+    padding-right: 275px;
 }
 @media (max-width: 600px) {
     span#pontos {
-       padding-right: 168px;
+       padding-right: 180px;
     }
 }
 /*PÁGINA SOLICITE* - fim/    
