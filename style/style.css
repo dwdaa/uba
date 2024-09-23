@@ -172,7 +172,7 @@ div#login {
 @media (max-width: 600px) {
     div#login {
         width: 100%; /* Largura total em telas menores */
-        margin: 10px 0; /* Margem vertical em telas menores */
+        margin: 10px 10px; /* Margem vertical em telas menores */
     }
 }
 input#ok{
@@ -197,6 +197,31 @@ h2{
 
 input#procure{
     padding: 8px;
-    width: 20vw ;
-    text-align: center;}
+    width: 50% ;
+    }
+div#solicite{
+    background-color: #2684bf62;
+    padding: 60px 8px;
+    text-align: center;
+    margin: 100px 90px;
+    border-radius: 10px;
+}    
+span#pontos{
+    padding-right: 265px;
+}
+@media (max-width: 600px) {
+    span#pontos {
+       padding-right: 168px;
+    }
+}
+/*PÁGINA SOLICITE* - fim/    
 
+/*PÁGINA SOBRE NÓS*/
+
+div#us{
+    text-align: center;
+    padding: 30px 40px;
+}
+div#us{
+    text-align: justify;
+}
