@@ -206,14 +206,6 @@ div#solicite{
     margin: 60px 30px;
     border-radius: 10px;
 }    
-span#pontos{
-    padding-right: 325px;
-}
-@media (max-width: 600px) {
-    span#pontos {
-       padding-right: 230px;
-    }
-}
 /*PÁGINA SOLICITE* - fim/    
 
 /*PÁGINA SOBRE NÓS*/
