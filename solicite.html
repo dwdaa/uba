@@ -13,7 +13,7 @@
         <div id="uba">
             <span id="barco" class="material-symbols-outlined">
                 directions_boat
-                </span> <h2>Ubá</h2>
+            </span> <h2>Ubá</h2>
         </div>
 
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu</span>
@@ -32,43 +32,39 @@
 
         <div style="background-color: #5fb6d977;" class="container">
             <div class="caixa">
-            <div id="solicite">
-                <span class="material-symbols-outlined">
-                    location_on
-                    </span>
-                <input id="procure" type="text" name="local" placeholder="Insira o local">
-                <br>
-                <br>
-                <br>
-                <br>
-                <span class="material-symbols-outlined">
-                    location_on
-                    </span>
-                <input id="procure" type="text" name="local" placeholder="Informe o destino" >
-                <br>
-                <br>
-                <br>
-                <input id="ok" type="submit" value="Solicitar">
-            </div>
+                <div id="solicite">
+                    <form action="/solicitar" method="POST">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <input id="procure" type="text" name="local" placeholder="Insira o local" required>
+                        <br><br><br><br>
+
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <input id="procure" type="text" name="destino" placeholder="Informe o destino" required>
+                        <br><br><br><br>
+                        
+                        <input id="ok" type="submit" value="Solicitar">
+                    </form>
+                </div>
             </div>
             <div class="caixa">
                 <img src="img/manaus.jpg" alt="">
             </div>
         </div>
-    
-
-
     </main>
 
     <footer>
         <div id="uba">
             <span id="barco" class="material-symbols-outlined">
                 directions_boat
-                </span> <h2>Ubá</h2>
+            </span> <h2>Ubá</h2>
         </div>
-           <hr>
-           <br>
-           <p>©2024 Ubá Fluvial. Todos os direitos reservados.</p>
+        <hr>
+        <br>
+        <p>©2024 Ubá Fluvial. Todos os direitos reservados.</p>
     <footer>  
 
     <script>
@@ -80,12 +76,12 @@
             }
         }
         function clickMenu() {
-          if (menu.style.display == 'block') {
-              menu.style.display = 'none'
-          } 
-          else {
-              menu.style.display = 'block'
-          }
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } 
+            else {
+                menu.style.display = 'block'
+            }
         }
     </script>
 </body>
