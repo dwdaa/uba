@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubá</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/boat.png" type="image/x-icon">
+</head>
+<style>
+    /* Estilos básicos */
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #333;
+        height: 100px;
+    }
+    
+    .box {
+        background-color: #4CAF50;
+        width: calc(100% / 3 - 10px); /* Divide em 3 partes e considera um pequeno espaçamento */
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+</style>
+</head>
+<header>
+    <div id="uba">
+        <span id="barco" class="material-symbols-outlined">
+            directions_boat
+            </span> <h2>Ubá</h2>
+    </div>
+
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu</span>
+
+    <menu id="menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="solicite.html">SOLICITE</a></li>
+            <li><a href="passagens.html">PASSAGENS</a></li>
+            <li><a href="minhaconta.html">MINHA CONTA </a></li>
+            <li><a href="sobre.html">SOBRE NÓS</a></li>
+        </ul>
+    </menu>
+
+</header>
+<main>
+<body>
+
+<div class="container">
+<div class="box">Parte 1</div>
+<div class="box">Parte 2</div>
+<div class="box">Parte 3</div>
+</div>
+</main>
+<footer>
+    <div id="uba">
+        <span id="barco" class="material-symbols-outlined">
+            directions_boat
+        </span> <h2>Ubá</h2>
+    </div>
+    <hr>
+    <br>
+    <p>©2024 Ubá Fluvial. Todos os direitos reservados.</p>
+<footer>  
+
+<script>
+// Calcular a largura de cada parte usando JavaScript (opcional)
+const container = document.querySelector('.container');
+const boxWidth = container.clientWidth / 3;
+
+// Exibir a largura de cada parte no console
+console.log("Largura de cada parte:", boxWidth, "pixels");
+</script>
+    <script>
+        function mudouoTamanho(){
+            if (window.innerWidth == 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+          if (menu.style.display == 'block') {
+              menu.style.display = 'none'
+          } 
+          else {
+              menu.style.display = 'block'
+          }
+        }
+    </script>
+</body>
+</html>
